@@ -4,9 +4,3 @@
 local setKeyMap = vim.keymap.set
 local deleteKeyMap = vim.keymap.del
 local opts = { silent = true }
-
-deleteKeyMap("n", "<A-j>")
-deleteKeyMap("n", "<A-k>")
-
-setKeyMap("n", "<A-j>", ":BufferLineCycleNext<CR>", opts)
-setKeyMap("n", "<A-k>", ":BufferLineCyclePrev<CR>", opts)
