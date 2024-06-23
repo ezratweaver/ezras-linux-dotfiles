@@ -62,8 +62,11 @@ if status is-interactive
 
     alias gs="git status"
     alias ga="git add"
+    alias gam="git commit --amend --no-edit"
+    alias gamm="git commit --amend"
     alias gc="git commit -m"
     alias gp="git push"
+    alias gpf="git push --force-with-lease"
     alias gr="git restore"
     alias gpl="git pull"
     alias gst="git stash"
