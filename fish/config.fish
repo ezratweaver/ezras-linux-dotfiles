@@ -15,7 +15,6 @@ if status is-interactive
     fish_add_path /home/ezratweaver/Android/Sdk/emulator
     fish_add_path /home/ezratweaver/Android/Sdk/platform-tools
 
-    alias restart-audio='systemctl --user restart wireplumber pipewire pipewire-pulse'
     alias c='clear'
     alias nf='neofetch'
     alias pf='pfetch'
