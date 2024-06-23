@@ -73,4 +73,6 @@ if status is-interactive
     alias gsp="git stash; git pull"
     alias gcheck="git checkout"
 
+    zoxide init fish | source
+
 end
