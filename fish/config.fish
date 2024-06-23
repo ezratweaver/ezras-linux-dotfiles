@@ -2,7 +2,7 @@ if status is-interactive
 
     set fish_greeting
 
-    export EDITOR=lvim
+    export EDITOR=nvim
 
     # -----------------------------------------------------
     # ALIASES
@@ -10,6 +10,10 @@ if status is-interactive
 
     fish_add_path /home/ezratweaver/.local/bin
 
+    export ANDROID_HOME=/home/ezratweaver/Android/Sdk
+
+    fish_add_path /home/ezratweaver/Android/Sdk/emulator
+    fish_add_path /home/ezratweaver/Android/Sdk/platform-tools
 
     alias restart-audio='systemctl --user restart wireplumber pipewire pipewire-pulse'
     alias c='clear'
@@ -21,7 +25,7 @@ if status is-interactive
     alias shutdown='systemctl poweroff'
     alias v='$EDITOR'
 
-    alias vfzf='lvim "$(fzf)"'
+    alias vfzf='$EDITOR "$(fzf)"'
     alias cdf='cd ~ && cd $(find . -type d -print | fzf)'
 
     alias ts='~/dotfiles/scripts/snapshot.sh'
@@ -48,7 +52,7 @@ if status is-interactive
     alias p="python"
 
     function cd --argument dir
-        if [ "dir" = "" ]
+        if [ dir = "" ]
             z $HOME
         else
             z $dir
@@ -67,11 +71,6 @@ if status is-interactive
     alias gsp="git stash; git pull"
     alias gcheck="git checkout"
 
-    # starship init fish | source
-
     zoxide init fish | source
-    
-    #    set plugins https://github.com/kidonng/plug.fish
-    #    source $__fish_user_data_dir/plugins/plug.fish/conf.d/plugin_load.fish
 
 end
