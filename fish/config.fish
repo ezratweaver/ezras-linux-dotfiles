@@ -24,7 +24,7 @@ if status is-interactive
     alias shutdown='systemctl poweroff'
     alias v='$EDITOR'
 
-    alias vfzf='$EDITOR "$(fzf --height=70% --layout=reverse --info=inline --border --margin=1 --padding=1)"'
+    alias vfzf='fzf --height=70% --layout=reverse --info=inline --border --margin=1 --padding=1 | xargs -0 -r -0 $EDITOR'
     alias cdf='cd ~ && cd $(find . -type d -print | fzf)'
 
     alias ts='~/dotfiles/scripts/snapshot.sh'
