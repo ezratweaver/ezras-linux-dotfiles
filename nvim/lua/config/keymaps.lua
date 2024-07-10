@@ -4,3 +4,5 @@
 local setKeyMap = vim.keymap.set
 local deleteKeyMap = vim.keymap.del
 local opts = { silent = true }
+
+vim.api.nvim_set_option("clipboard", "unnamedplus")
