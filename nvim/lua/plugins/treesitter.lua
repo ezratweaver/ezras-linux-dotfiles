@@ -19,6 +19,7 @@ return {
         "yaml",
         "prisma",
         "fish",
+        "sql",
       },
     },
   },
