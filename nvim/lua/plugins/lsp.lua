@@ -9,6 +9,7 @@ return {
       servers = {
         prismals = {},
         clangd = {},
+        sqlls = {},
       },
     },
   },
