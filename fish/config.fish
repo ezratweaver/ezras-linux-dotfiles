@@ -50,6 +50,8 @@ if status is-interactive
     alias gwx="~/bin/gwx.sh"
     alias p="python"
 
+    alias fixmon="xset -dpms"
+
     function cd --argument dir
         if [ dir = "" ]
             z $HOME
