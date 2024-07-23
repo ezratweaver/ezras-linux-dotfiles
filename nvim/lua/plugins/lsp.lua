@@ -10,6 +10,7 @@ return {
         prismals = {},
         clangd = {},
         sqlls = {},
+        pyright = {},
       },
     },
   },
