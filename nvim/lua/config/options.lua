@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.cmd("imap <C-c> <Esc>")
+
+vim.cmd("set nowritebackup")

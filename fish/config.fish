@@ -12,6 +12,10 @@ if status is-interactive
 
     export ANDROID_HOME=/home/ezratweaver/Android/Sdk
 
+    # I guess android studio does the env variables for us,
+    # but it doesn't play nice with Arch, so we erase it.
+    set -e ANDROID_SDK_ROOT
+
     fish_add_path /home/ezratweaver/Android/Sdk/emulator
     fish_add_path /home/ezratweaver/Android/Sdk/platform-tools
 
