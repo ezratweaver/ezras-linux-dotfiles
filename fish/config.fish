@@ -46,8 +46,7 @@ if status is-interactive
     alias bluetooth-on="rfkill unblock 0"
     alias bluetooth-off="rfkill block 0"
 
-    alias g="~/bin/g.sh"
-    alias gwx="~/bin/gwx.sh"
+    alias gb='go build'
     alias p="python"
 
     alias fixmon="xset -dpms"
