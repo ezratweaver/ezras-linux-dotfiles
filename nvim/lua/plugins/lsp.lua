@@ -11,6 +11,7 @@ return {
         clangd = {},
         sqlls = {},
         pyright = {},
+        gopls = {},
       },
     },
   },
