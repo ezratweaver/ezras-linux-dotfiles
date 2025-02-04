@@ -2,5 +2,5 @@
 
 SCRIPTPATH=$(dirname "$SCRIPT")
 
-pacman -S fisher fish neovim zoxide fzf
+pacman -S fisher fish neovim zoxide fzf xclip
 yay -S eza
