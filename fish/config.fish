@@ -20,7 +20,7 @@ if status is-interactive
     alias pf='pfetch'
     alias ls='eza -a --icons'
     alias ll='eza -al --icons'
-    alias l='eza -a --tree --level=1 --icons'
+    alias l='eza -a --tree --level=0 --icons'
     alias shutdown='systemctl poweroff'
     alias v='$EDITOR'
 
@@ -77,3 +77,6 @@ if status is-interactive
     zoxide init fish | source
 
 end
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH $PATH /home/ezratweaver/go/bin
